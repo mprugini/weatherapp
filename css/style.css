@@ -1,0 +1,56 @@
+body {
+	background-image: url("city_vector.jpg");
+	min-height:100vh;
+	background-size:cover;
+	background-position:center;
+	background-repeat:no-repeat;
+	color:white;
+}
+
+.hero{
+	position:absolute;
+	min-height:100vh;
+	min-width:100vw;
+	top:0;
+	bottom:0;
+	background-color:rgba(31,34,118,0.5);
+}
+
+.navbar{
+	background-color: rgb(69,106,171);
+}
+
+.navbar a{
+	color:white;
+}
+
+.weather{
+	border: 1px solid white;
+	background-color: rgba(0,0,0,0.5);
+	border-radius:10px;
+	text-align:center;
+}
+
+#search-btn {
+  color: #eee;
+}
+
+#search-txt {
+	color: red;
+	height:35px;
+	width:50%;
+	border-radius: 10px;
+	border-style:none;
+	outline:none;
+	padding-right:1px;
+	padding-left:1px;
+	text-align:center;
+}
+
+#city-name {
+  font-family: "Courier New";
+  font-size: 30px;
+  font-weight: bold;
+  color: #fff;
+}
+

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Weather App</title>
+	<meta charset="utf-8"> 
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+	<link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+	
+<body>
+<!--This is a transparent overlay-->
+<div class="hero">
+	<!--This is a navbar-->
+	<nav class="navbar">
+		<a class="navbar-brand" href="#">
+			<i class="fa fa-sun-o"></i><strong>Weather</strong>App
+		</a>
+		<span id="date" class="lead">2:30 PM | June 13, 2019</span>
+	</nav>
+	
+	<!--This is a weather section-->
+	<div class="container">
+		<br>
+		<div class="row" style="text-align:center;">
+			<div class="col-sm-8 mx-auto">
+				<h1>Welcome to Weather App</h1>
+				<br>
+				<input type="text" placeholder="Enter your city..." id="search-txt">
+				<a id="search-btn" href="#"><i class="fa fa-search" style="font-size:22px;"></i></a>
+			</div>
+		</div>
+		<br>
+		<div class="row">
+			<div class="col-sm-8 weather mx-auto">
+				<div class="row">
+					<div class="col-sm-12">
+						<div id="city-name"></div>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-sm-6">
+						<img src="" alt="" id="icon">
+						<div id="icon_description"></div>
+					</div>
+					<div class="col-sm-6" class="temperature">
+						<div id="temp"></div>
+					</div>
+				</div>
+				<br>
+				<div class="row">
+					<div class="col-sm-4" class="humidity">
+						<p><i class="material-icons">grain</i> Humidity</p>
+						<div id="humidity-div"></div>
+					</div>
+					<div class="col-sm-4">
+						<p><i class='fas fa-wind'></i> Wind Speed</p>
+						<div id="wind-speed"></div>
+					</div>
+					<div class="col-sm-4">
+						<p><i class="fa fa-location-arrow"></i> Wind Direction</p>
+						<div id="wind-direction"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<script  src="js/index.js"></script>
+</body>
+</html>
